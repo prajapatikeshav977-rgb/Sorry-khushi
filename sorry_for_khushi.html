@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Sorry for You ❤️</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#fff;
+    background:radial-gradient(circle at 15% 15%,#713b70 0,transparent 35%),radial-gradient(circle at 85% 80%,#8f3458 0,transparent 35%),linear-gradient(135deg,#180f28,#35152f 55%,#1b1229);
+    display:grid;place-items:center;padding:22px;overflow-x:hidden}
+  .card{width:min(100%,560px);padding:34px 26px;border:1px solid #ffffff30;border-radius:28px;
+    background:#ffffff12;backdrop-filter:blur(14px);box-shadow:0 25px 80px #0005;text-align:center;position:relative}
+  .heart{font-size:48px;animation:beat 1.3s infinite}
+  @keyframes beat{50%{transform:scale(1.16)}}
+  h1{font-size:clamp(2rem,8vw,3.1rem);line-height:1.05;margin:12px 0;color:#ffe1ec}
+  .sub{color:#f5cbdc;font-size:1.05rem}
+  .note{background:#ffffff12;border:1px solid #ffffff20;border-radius:18px;padding:20px;margin:24px 0;line-height:1.7;text-align:left}
+  .note p{margin:0 0 12px}.note p:last-child{margin:0}
+  .pill{display:inline-block;background:#ffffff18;border-radius:999px;padding:8px 14px;font-size:.9rem;color:#ffe1ec}
+  button{border:0;border-radius:999px;padding:14px 20px;margin:8px 5px;font-weight:700;font-size:1rem;cursor:pointer;transition:.2s}
+  button:active{transform:scale(.96)}
+  .yes{background:#ffd6e5;color:#55233b}.later{background:#ffffff18;color:#fff;border:1px solid #ffffff35}
+  #reply{min-height:56px;margin-top:18px;color:#ffe1ec;line-height:1.5;font-weight:600}
+  footer{font-size:.82rem;color:#e9bfd0;margin-top:22px}
+  .tiny{font-size:.9rem;color:#f2d8e3}
+  .spark{position:fixed;pointer-events:none;opacity:.45;animation:float 8s linear infinite}
+  @keyframes float{from{transform:translateY(110vh) rotate(0)}to{transform:translateY(-15vh) rotate(300deg)}}
+</style>
+</head>
+<body>
+<div class="spark" style="left:8%;animation-delay:-2s">♡</div><div class="spark" style="left:83%;animation-delay:-5s">✦</div><div class="spark" style="left:54%;animation-delay:-7s">♡</div>
+<main class="card">
+  <div class="heart">❤️</div>
+  <span class="pill">A tiny website, a very real apology</span>
+  <h1>I'm really sorry,<br> Khushi.</h1>
+  <p class="sub">Please read this little message… no rush. 🥺</p>
+  <section class="note">
+    <p>Subah jab tumne call kiya, main busy tha — lekin busy hona mere रूखे तरीके se baat karne ka excuse nahi hai.</p>
+    <p>Mujhe tumse thoda pyaar se baat karna chahiye tha. Tum bas mujhse baat karna chahti thi, aur maine short, dry replies de diye. I understand ki tumhe bura laga hoga.</p>
+    <p><strong>I'm genuinely sorry.</strong> Mera intention tumhe hurt karna bilkul nahi tha, but intention se zyada matter ye karta hai ki meri baat se tumhe kaisa feel hua. I'll try to communicate better next time — even if I'm busy, I'll say it nicely.</p>
+    <p>And haan… meri taraf se subah wale dry replies ko officially <strong>返品 / return</strong> kar do. 😭 Main unki jagah proper pyaar se baat karne wala version bhej raha hoon.</p>
+  </section>
+  <p class="tiny">No pressure to forgive me instantly. I just wanted you to know that you matter to me. 🤍</p>
+  <div>
+    <button class="yes" onclick="document.getElementById('reply').textContent='YAY… thank you for hearing me out. ❤️ I owe you a much nicer conversation. 🫶'">Okay, I forgive you ❤️</button>
+    <button class="later" onclick="document.getElementById('reply').textContent='That’s okay. Take your time. I’ll respect that, and I’m still sorry. 🤍'">I need a little time</button>
+  </div>
+  <div id="reply" aria-live="polite"></div>
+  <footer>Made with care (and a little guilt) · From your slightly silly human 🤍</footer>
+</main>
+</body>
+</html>
